@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <!--RESPONSIVE META TAG-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--FONT AWESOME ICONS-->
+        <script src="https://kit.fontawesome.com/4f7d37b381.js" crossorigin="anonymous"></script>
+
+        <!--CSS FOR BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!--CUSTOM CSS-->
+        <style>
+            .mark {
+                background-color: #00d8b4;
+            }
+            
+            .btn {
+                letter-spacing: 2px;
+            }
+
+            i {
+                color: #ffc140;
+            }
+
+            a:hover > i {
+                color: #fff140;
+                text-shadow:  2px 2px 4px rgba(208 , 142, 10, 0.6), -2px -2px 4px rgba(208, 142, 10, 0.6);
+                transition: all 0.5s;
+            }
+
+            #intro {
+                border-top: 1px solid rgba(1, 191, 181, 0.5);
+                border-left: 1px solid rgba(1, 191, 181, 0.5);
+                border-right: 1px solid rgba(1, 191, 181, 1);
+                border-bottom: 1px solid rgba(1, 191, 181, 1);
+                box-shadow: 5px 5px 0px #00d8b4;
+            }
+
+            .carousel {
+                overflow: hidden;
+            }
+
+            .carousel img {
+                transition: .5s;
+            }
+
+            .carousel:hover img {
+                transform: scale(1.2);
+            }
+
+            /*for smaller screens*/
+            @media(max-width: 575.98px) {
+                .fixednav {
+                    top: 0;
+                    width: 100vw;
+                    height: 70px;
+                    position: fixed;
+                    margin-left: -15px;
+                    display: flex;
+                    padding: 0;
+                    border-bottom: 2px solid #00d8b4;
+                }
+                .navbar-nav {
+                    flex-direction: row; /*links side by side*/
+                    font-size: 1em;
+                    margin: 0 auto;
+                }
+
+                .fa-trophy {
+                    display: block;
+                    text-align: center;
+                }
+
+                .where {
+                    display: none;
+                }
+
+                .title-number {
+                    margin: auto 15px;
+                }
+
+                #main-doc {
+                    margin: 130px auto auto auto;
+                }
+
+                #crest {
+                    display: none;
+                }
+            }
+            
+            /*for bigger screens*/
+            @media(min-width: 576px) {
+                .btn {
+                    width: 100px;
+                    margin: 5px auto;
+                    padding: 5px 0;
+                }
+
+                .fixednav {
+                    width: 120px;
+                    height: 100vh;
+                    position: fixed;
+                    left: 0;
+                    justify-content: center;
+                    border-right: 2px solid #00d8b4;
+                }
+
+                .fa-trophy, .where {
+                    display: block;
+                    text-align: center;
+                }
+
+                .title-number {
+                    display: none;
+                }
+
+                #main-doc {
+                    margin: auto auto auto 140px;
+                }
+
+                #carousel-1, #carousel-2, #carousel-3, #carousel-4, #carousel-5, #carousel-6 {
+                    max-width: 400px;
+                    margin-right: 15px;
+                }
+            }
+
+                @media(min-width: 768px) {
+                    #main-doc {
+                        max-width: 75%;
+                        margin: 0 auto;
+                        padding-left: 140px;
+                    }
+                }
+
+        </style>
+
+        <title>Kings of Europe</title>
+    </head>
+
+    <body>
+<!--******************NAVIGATION STARTS******************-->
+            <nav class="navbar navbar-dark bg-danger fixednav shadow" style="z-index: 9000;" id="navbar">
+                <img id="crest" src="lfc-crest.png">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-danger" href="#Rome:_the_groundbreaker">
+                            <i class="fas fa-trophy"></i>
+                            <span class="where">Rome</span>
+                            <span class="title-number">#1</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-danger" href="#Bringing_it_home">
+                            <i class="fas fa-trophy"></i>
+                            <span class="where">London</span>
+                            <span class="title-number">#2</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-danger" href="#Paisley_makes_it_3">
+                            <i class="fas fa-trophy"></i>
+                            <span class="where">Paris</span>
+                            <span class="title-number">#3</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-danger" href="#Rome:_back_again">
+                            <i class="fas fa-trophy"></i>
+                            <span class="where">Rome</span>
+                            <span class="title-number">#4</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-danger" href="#The_Miracle_of_Istanbul">
+                            <i class="fas fa-trophy"></i>
+                            <span class="where">Istanbul</span>
+                            <span class="title-number">#5</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a type="button" class="btn btn-danger" href="#The_Klopp_Effect">
+                            <i class="fas fa-trophy"></i>
+                            <span class="where">Madrid</span>
+                            <span class="title-number">#6</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+<!--******************/NAVIGATION ENDS******************-->
+
+<!--********************MAIN CONTENT********************-->
+        <main class="d-flex flex-column" id="main-doc">
+
+    <!--**********title and context**********-->
+            <p class="display-4 text-center mt-3">Liverpool FC's European History</p>
+            <p id="intro" class="text-dark bg-light m-4 p-4 text-justify">Liverpool are England's most successful football club in European competitions, collecting a whopping 13 trophies across tournaments, of which 6 are Champions League (former European Cup) titles. The first came under Bob Paisley, who added two more to the trophy cabinet before his successor Joe Fagan also won the famous cup. Rafael Benitez oversaw the Miracle of Istanbul in 2005, and the most recent came under Jürgen Klopp in 2019.</p>
+
+    <!--*****first game*****-->
+            <section class="main-section" id="Rome:_the_groundbreaker">
+            
+    <!--*****game title*****-->
+            <h3 class="text-danger ml-2 pt-4 pb-2 border-bottom border-danger">Rome: the groundbreaker</h3>
+            
+    <!--*****score card*****-->
+            <div class="card shadow-sm my-4 mx-auto" style="width: 450px;">
+                <div class="card-body my-1 mx-auto">
+                    <p class="d-inline text-dark text-uppercase small font-weight-bold">
+                        <img src="flags/eng-flag.png" class="mr-3">
+                        Liverpool</p>
+                        <h4 class="d-inline font-weight-bold mx-2 mark">3 — 1</h4>
+                        <p class="d-inline text-dark text-uppercase small font-weight-bold">Borussia M.<img src="flags/ger-flag.png" class="ml-3">
+                    </p>
+                </div>
+            </div>
+    
+    <!--*****carousel*****-->
+    <div id="carousel-1" class="carousel slide mx-sm-auto" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-1" data-slide-to="1"></li>
+          <li data-target="#carousel-1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carousel (1)/romei1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (1)/romei2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (1)/romei3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+            <p class="text-justify m-3 pt-3">The 1977 European Cup Final was played by Liverpool and Borussia Mönchengladbach on 25 May 1977 at the Stadio Olimpico in Rome, Italy. Both teams were appearing in their first European Cup final, although the two sides had previously met in the 1973 UEFA Cup Final, which Liverpool won 3–2 on aggregate over two legs.<br><br>
+            Terry McDermott put us on the lead, but Allan Simonsen equalised for Mönchengladbach early in the second half. Liverpool regained the lead midway through the second half with a goal from Tommy Smith, and Phil Neal made sure we won the match <span class="badge badge-danger">3–1</span> to secure our first ever European Cup! The victory came a year after they had wonour triumph at the UEFA Cup, which meant that Bob Paisley became the first manager to win the UEFA Cup and European Cup in successive seasons.</p>
+        
+        </section>
+
+        <section class="main-section" id="Bringing_it_home">
+            
+            <!--game title-->
+            <h3 class="text-danger ml-2 pt-4 pb-2 border-bottom border-danger">Bringing it home</h3>
+            
+            <!--score card-->
+            <div class="card shadow-sm my-4 mx-auto" style="width: 450px;">
+                <div class="card-body my-1 mx-auto">
+                    <p class="d-inline text-dark text-uppercase small font-weight-bold">
+                        <img src="flags/eng-flag.png" class="mr-3">
+                        Liverpool</p>
+                        <h4 class="d-inline font-weight-bold mx-2 mark">1 — 0</h4>
+                        <p class="d-inline text-dark text-uppercase small font-weight-bold">C. Brugge<img src="flags/bel-flag.png" class="ml-3">
+                    </p>
+                </div>
+            </div>
+
+    <!--*****carousel*****-->
+    <div id="carousel-2" class="carousel slide mx-sm-auto" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-2" data-slide-to="1"></li>
+          <li data-target="#carousel-2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carousel (2)/london1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (2)/london2.jpeg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (2)/london3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+            <p class="text-justify m-3 pt-3">The very next year, Liverpool faced Club Brugge of Belgium for the 1978 European Cup Final on 10 May 1978 at Wembley Stadium, in England – home of the reigning champions. The two sides had met once before in European competition, when they contested the 1976 UEFA Cup Final, which Liverpool won 4–3 on aggregate. <br><br>
+            Kenny Dalglish scored in the second-half from a Graeme Souness pass, making it <span class="badge badge-danger">1–0</span>. The only goal of the match secured Liverpool's second European Cup and third European trophy in succession, and in so <em>we became the first English team to retain the European Cup.</em></p>
+
+        </section>
+
+        <section class="main-section" id="Paisley_makes_it_3">
+            
+            <!--game title-->
+            <h3 class="text-danger ml-2 pt-4 pb-2 border-bottom border-danger">Paisley makes it 3</h3>
+            
+            <!--score card-->
+            <div class="card shadow-sm my-4 mx-auto" style="width: 450px;">
+                <div class="card-body my-1 mx-auto">
+                    <p class="d-inline text-dark text-uppercase small font-weight-bold">
+                        <img src="flags/eng-flag.png" class="mr-3">
+                        Liverpool</p>
+                        <h4 class="d-inline font-weight-bold mx-2 mark">1 — 0</h4>
+                        <p class="d-inline text-dark text-uppercase small font-weight-bold">R. Madrid<img src="flags/spa-flag.png" class="ml-3">
+                    </p>
+                </div>
+            </div>
+
+    <!--*****carousel*****-->
+    <div id="carousel-3" class="carousel slide mx-sm-auto" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-3" data-slide-to="1"></li>
+          <li data-target="#carousel-3" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carousel (3)/paris1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (3)/paris2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (3)/paris3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+            <p class="text-justify m-3 pt-3">At the 1981 European Cup Final, played on 27 May 1981 at the Parc des Princes, Paris, our adversary were Real Madrid. It was the final match of the 1980–81 season of Europe's premier cup competition, the European Cup. Although our campaign was glistening, Liverpool were the underdogs for the firs time, as Real Madrid were appearing in their 9th final and had previously won the competition 6 times.<br><br>
+            Despite the odds, Alan Kennedy scored the final's only goal to win the match <span class="badge badge-danger">1–0</span>. The triumph placed Bob Paisley as the <strong>first manager to win the competition three times.</strong></p>
+
+        </section>
+
+        <section class="main-section" id="Rome:_back_again">
+            
+            <!--game title-->
+            <h3 class="text-danger ml-2 pt-4 pb-2 border-bottom border-danger">Rome: back again</h3>
+            
+            <!--score card-->
+            <div class="card shadow-sm my-4 mx-auto" style="width: 450px;">
+                <div class="card-body my-1 mx-auto">
+                    <p class="d-inline text-dark text-uppercase small font-weight-bold">
+                        <img src="flags/eng-flag.png" class="mr-3">
+                        Liverpool</p>
+                        <h4 class="d-inline font-weight-bold mx-2 mark">1 — 1</h4>
+                        <p class="d-inline text-dark text-uppercase small font-weight-bold">A. S. Roma <img src="flags/ita-flag.png" class="ml-3"></p>
+                        <p class="small text-center mb-0">4–2<br><em>on penalties</em></p>
+                </div>
+            </div>
+
+    <!--*****carousel*****-->
+    <div id="carousel-4" class="carousel slide mx-sm-auto" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-4" data-slide-to="1"></li>
+          <li data-target="#carousel-4" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carousel (4)/romeii1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (4)/romeii2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (4)/romeii3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-4" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+            <p class="text-justify m-3 pt-3">The 1984 European Cup Final saw Liverpool and Roma take the decision to the penalties. On 30 May 1984, again at the Stadio Olimpico – the venue where we were crowned European kings for the first time –, we played our fourth final, having already won the previous 3. Even so, Roma went into the match as favorites, as the final was held at their home ground.<br><br>
+            We took the lead in the first half when Phil Neal scored, but Roberto Pruzzo equalised for Roma before half-time. The score didn't change throughout the second half and extra-time, so the match went to a penalty shoot-out, which Liverpool won by <span class="badge badge-danger">4–2</span>. This meant that we would go on to claim our fourth European Cup in just 7 years! An amazing feat – and one we would have to cherish for a long time, because the next one wouldn't come for 20 years...</p>
+
+        </section>
+
+        <section class="main-section" id="The_Miracle_of_Istanbul">
+            
+            <!--game title-->
+            <h3 class="text-danger ml-2 pt-4 pb-2 border-bottom border-danger">The Miracle of Istanbul</h3>
+            
+            <!--score card-->
+            <div class="card shadow-sm my-4 mx-auto" style="width: 450px;">
+                <div class="card-body my-1 mx-auto">
+                    <p class="d-inline text-dark text-uppercase small font-weight-bold">
+                        <img src="flags/ita-flag.png" class="mr-3">
+                        A. C. Milan</p>
+                        <h4 class="d-inline font-weight-bold mx-2 mark">3 — 3</h4>
+                        <p class="d-inline text-dark text-uppercase small font-weight-bold">Liverpool <img src="flags/eng-flag.png" class="ml-3"></p>
+                        <p class="small text-center mb-0">2–3<br><em>on penalties</em></p>
+                </div>
+            </div>
+
+    <!--*****carousel*****-->
+    <div id="carousel-5" class="carousel slide mx-sm-auto" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-5" data-slide-to="1"></li>
+          <li data-target="#carousel-5" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carousel (5)/istanbul1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (5)/istanbul2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (5)/istanbul3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+            <p class="text-justify m-3 pt-3">They don't call it that for nothing. As other clubs rose to challenge Liverpool's overwhelming superiority across England and Europe, the early 90s saw the beginning of our sorrow, one that would last for many painful years still. A very few joyful moments between then and now standout when we look back, and they're all accompanied by the face of a man called Steven Gerrard. Stevie would go on to change the course of the now called UEFA Champions League Final of 2004–05.<br><br>
+            Milan were regarded as favourites before the match and acted like it on the pitch. They took the lead within the very first minute through captain Paolo Maldini, and it wouldn't be long before Hernán Crespo added two more goals, sending our boys 3–0 down in half-time. Early in the second half, however, Gerrard headed in our first goal in the match and waved his arms at the crowd and his team-mates, looking to inspire a comeback. In a dramatic six-minute spell, we leveled the score at 3–3, with the other two goals coming from Vladimír Šmicer and Xabi Alonso.<br><br>
+            It would remain like so during extra time, so a penalty shoot-out win was required one more time to make us champions. The score was <span class="badge badge-danger">3–2</span> to Liverpool after Jerzy Dudek saved Andriy Shevchenko's penalty, securing a fifth European Cup for us. Liverpool's comeback became known as <em>The Miracle of Istanbul</em>, and is regarded as one of the greatest finals in the history of the tournament.</p>
+
+        </section>
+
+        <section class="main-section" id="The_Klopp_Effect">
+            
+            <!--game title-->
+            <h3 class="text-danger ml-2 pt-4 pb-2 border-bottom border-danger">The Klopp effect</h3>
+            
+            <!--score card-->
+            <div class="card shadow-sm my-4 mx-auto" style="width: 450px;">
+                <div class="card-body my-1 mx-auto">
+                    <p class="d-inline text-dark text-uppercase small font-weight-bold">
+                        <img src="flags/eng-flag.png" class="mr-3">
+                        Tottenham</p>
+                        <h4 class="d-inline font-weight-bold mx-2 mark">0 — 2</h4>
+                        <p class="d-inline text-dark text-uppercase small font-weight-bold">Liverpool <img src="flags/eng-flag.png" class="ml-3"></p>
+                </div>
+            </div>
+
+    <!--*****carousel*****-->
+    <div id="carousel-6" class="carousel slide mx-sm-auto" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="carousel (6)/madrid1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (6)/madrid2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="carousel (6)/madrid3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-6" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+            <p class="text-justify m-3 pt-3">The 2019 UEFA Champions League Final was played at the Metropolitano Stadium in Madrid, Spain, on 1 June 2019, between English sides Liverpool, in our ninth final overall and second in a row, and Tottenham Hotspur, in their first ever European Cup final. It was the seventh Champions League final – and the fourth of the decade – to feature two teams from the same association, and the second all-English final.<br><br>
+            Liverpool won rather unsurprisingly by <span class="badge badge-danger">2–0</span> with goals by Mohamed Salah and Divock Origi (one each). Winners for the sixth time, we saw the end of the dry spell and went on to secure other titles immediately after this triumph: Super Cup, FIFA Club World Cup, and, at last, a Premier League trophy!</p>
+
+        </section>
+
+        </main>
+        <!--/MAIN CONTENT-->
+
+
+
+
+
+        <!--JAVASCRIPT FOR BOOTSTRAP-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+
+</html>
