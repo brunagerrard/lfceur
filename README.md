@@ -12,7 +12,7 @@ This baby is my first Responsive Web Design project, meaning its layout *should*
 
 This web page is a tribute to Liverpool's european history, displaying information such as context, score and images of every Champions League/European Cup title ever won by the club. 
 
-## 🚀 Tech & Frameworks.
+## 🚀 Tech.
 
 ✔[Bootstrap 4](https://getbootstrap.com/)
 
